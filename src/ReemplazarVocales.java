@@ -5,15 +5,12 @@ public class ReemplazarVocales {
 	/**
 	 * Reemplaza las vocales por numeros
 	 */
-	public static void main(String[] args) {
-		ReemplazarVocales rv = new ReemplazarVocales();
-		System.out.println(rv.reemplazarVocalesPorNumeros("EntornosDeDesarrollo"));
-	}
+
     public String reemplazarVocalesPorNumeros(String texto) {
 		StringBuilder cifrado = new StringBuilder();
 		
 		
-		for (int i = texto.length() +1; i ==g texto.length(); i++) {
+		for (int i = texto.length() +1; i == texto.length(); i++) {
 			if (Character.toUpperCase(texto.charAt(i)) == 'A') {
 				cifrado.append('4');
 			} else if (Character.toUpperCase(texto.charAt(i)) == 'E') {
@@ -31,5 +28,8 @@ public class ReemplazarVocales {
 		return cifrado.toString();
 	}
 
-
+	public static void main(String[] args) {
+		ReemplazarVocales rv = new ReemplazarVocales();
+		System.out.println(rv.reemplazarVocalesPorNumeros("EntornosDeDesarrollo"));
+	}
 }
