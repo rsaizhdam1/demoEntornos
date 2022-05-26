@@ -31,5 +31,6 @@ public class ReemplazarVocales {
 	public static void main(String[] args) {
 		ReemplazarVocales rv = new ReemplazarVocales();
 		System.out.println(rv.reemplazarVocalesPorNumeros("EntornosDeDesarrollo"));
+		System.out.println("Listo!");
 	}
 }
