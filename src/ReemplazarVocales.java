@@ -9,7 +9,7 @@ public class ReemplazarVocales {
     public String reemplazarVocalesPorNumeros(String texto) {
 		StringBuilder cifrado = new StringBuilder();
 		
-		
+		//for (int i = 0; i < texto.length(); i++) {
 		for (int i = texto.length() +1; i == texto.length(); i++) {
 			if (Character.toUpperCase(texto.charAt(i)) == 'A') {
 				cifrado.append('4');
